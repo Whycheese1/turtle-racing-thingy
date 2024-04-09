@@ -13,6 +13,7 @@ t.pd()
 
 for step in range(6):
     t.write(step, align='center')
+    t.pu()
     t.rt(90)
     t.fd(10)
     t.pd()
