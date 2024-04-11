@@ -1,11 +1,10 @@
 import turtle as t
+
 from random import randint
 
-screen = t.Screen()
-
-screen.bgcolor("light blue")
-screen.setup(500,500)
-screen.title('Turtle Race assignment')
+t.bgcolor("light green")
+t.setup(500,500)
+t.title('Turtle Race assignment')
 
 t.pu()
 t.speed(10)
@@ -24,21 +23,41 @@ for step in range(11):
     t.lt(90)
     t.fd(35)
 
-kim = t
+kim = t.Turtle()
 kim.color('red')
 kim.shape('turtle')
+kim.pu()
 kim.goto(-190,100)
 kim.pd()
 
-jim = t
-jim.color('pink')
+jim = t.Turtle()
+jim.color('blue')
+jim.shape('turtle')
 jim.pu()
 jim.goto(-190,50)
 jim.pd()
 
+tim = t.Turtle()
+tim.color('pink')
+tim.shape('turtle')
+tim.pu()
+tim.goto(-190,20)
+tim.pd()
 
-for turn in range(118):
+lim = t.Turtle()
+lim.color('purple')
+lim.shape('turtle')
+lim.pu()
+lim.goto(-190,0)
+lim.pd()
+
+
+for turn in range(116):
     kim.fd( randint(1,5) )
     jim.fd( randint(1,5) )
+    tim.fd( randint(1,5) )
+    lim.fd( randint(1,5) )
+    
+    
     
     
